@@ -28,7 +28,7 @@
                                     echo "$item";
                             }
 
-                            grab($backpack[rand(0, 9)]);
+                            grab($backpack[rand(1, 10)]);
                             ?>
                         </div>
                     </div>
