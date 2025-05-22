@@ -22,7 +22,10 @@
                             $backpack = array("1" => "sandwich", "2" => "water", "3" => "fruit", "4" => "snack", "5" => "chocolate", "6" => "candy", "7" => "soda", "8" => "juice", "9" => "chips", "10" => "cookies");
                             function grab($item)
                             {
-                                echo "<a href='pages\winpage\index.php'>$item</a>";
+                                if ($item == "sandwich")
+                                    echo "<a href='pages\winpage\index.php'>$item</a>";
+                                else
+                                    echo "$item";
                             }
 
                             grab($backpack[rand(0, 9)]);
