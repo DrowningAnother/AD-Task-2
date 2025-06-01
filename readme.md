@@ -50,6 +50,7 @@ This program randomly generates a certain event to happen, with a picture and de
 ### Key Components
 
 - Random events
+- Random Items
 - Secrets
 
 ### Technology
