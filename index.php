@@ -9,9 +9,11 @@
 </head>
 
 <body>
-    <?php
-    include 'components/header.php';
-    ?>
+    <div id="header">
+        <nav>
+            <a href="index.php"> Peculiar Website </a>
+        </nav>
+    </div>
     <div id="main-wrapper">
         <div id="container">
             <div id="main-content">
@@ -19,22 +21,38 @@
                     <div class="imagewrap">
                         <div class="image-container">
                             <?php
-                            $backpack = array("1" => "sandwich", "2" => "water", "3" => "fruit", "4" => "snack", "5" => "chocolate", "6" => "candy", "7" => "soda", "8" => "juice", "9" => "chips", "10" => "cookies");
-                            function grab($item)
-                            {
-                                if ($item == "sandwich")
-                                    echo "<a href='pages\winpage\index.php'>$item</a>";
-                                else
-                                    echo "$item";
+                            $d1 = rand(0, 99);
+                            for ($i = 0; $i < $d1 * 0.1; $i++) {
+                                echo "o";
                             }
-
-                            grab($backpack[rand(1, 10)]);
+                            echo "<br>";
+                            if ($d1 >= 50) {
+                                echo "You found nothing.";
+                            } else if ($d1 >= 40) {
+                                echo "Hush, Jam is sleeping.";
+                                echo "<img src=\"assets/img/sleeping.jpg\">";
+                            } else if ($d1 >= 30) {
+                                echo "You found the rizzler!";
+                                echo "<img src=\"assets/img/mika.jpg\">";
+                            } else if ($d1 >= 20) {
+                                echo "You found the Kawasaki!!!<br>Click it to go to the funny page.";
+                                echo "<a href=\"pages/winpage/index.php\"><img src=\"assets/img/kawasaki.jpg\"></a>";
+                            } else if ($d1 >= 10) {
+                                echo "JM is sleeping.!";
+                                echo "<img src=\"assets/img/jmsleep.jpg\">";
+                            } else {
+                                echo "This weird person invites you to a game! <br> He is a gamer.";
+                                echo "<img src=\"assets/img/emirusimp.jpg\">";
+                            }
                             ?>
                         </div>
                     </div>
                 </h1>
             </div>
         </div>
+    </div>
+    <?php
+    ?>
 </body>
 
 </html>
