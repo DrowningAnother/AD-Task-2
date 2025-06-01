@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
+    <?php require_once __DIR__ . '/init.php'; ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favour is in the air.</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
+
     <?php include "components/header.php"; ?>
     <div id="main-wrapper">
         <div id="container">
