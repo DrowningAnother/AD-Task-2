@@ -13,9 +13,10 @@
 <br />
 
 ![](https://visit-counter.vercel.app/counter.png?page=DrowningAnother/AD-Task-1)
+<br />
+
 [![wakatime](https://wakatime.com/badge/user/018ee98b-c24b-475a-922e-55b260390c71/project/59795e11-d768-429f-83ac-b5a28a3e9078.svg)](https://wakatime.com/badge/user/018ee98b-c24b-475a-922e-55b260390c71/project/59795e11-d768-429f-83ac-b5a28a3e9078)
 
-<br />
 <br />
 
 <details>
