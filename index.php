@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <?php include "components/header.php"; ?>
     <div id="main-wrapper">
         <div id="container">
@@ -32,14 +31,14 @@
                             $extra = array("1" => "Sandwich", "2" => "Pasta", "3" => "Pizza", "4" => "Burger", "5" => "Sushi");
                             $selected = $extra[rand(1, 5)];
 
-                            echo "You have $selected.<br>";
 
                             $d1 = rand(0, 99);
                             for ($i = 0; $i < $d1 * 0.1; $i++) {
                                 echo "o";
                             }
                             echo "<br>";
-
+                            echo "You have $selected.<br>";
+                            echo "Refresh the page to try again.<br>";
 
 
 
