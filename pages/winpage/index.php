@@ -9,11 +9,7 @@
 </head>
 
 <body>
-    <div id="header">
-        <nav>
-            <a href="index.php"> What is real, in the end? </a>
-        </nav>
-    </div>
+    <?php include "../../components/header.php"; ?>
     <div id="main-wrapper">
         <div id="container">
             <div id="main-content">

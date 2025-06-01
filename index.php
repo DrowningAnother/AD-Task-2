@@ -9,11 +9,7 @@
 </head>
 
 <body>
-    <div id="header">
-        <nav>
-            <a href="index.php"> Peculiar Website </a>
-        </nav>
-    </div>
+    <?php include "components/header.php"; ?>
     <div id="main-wrapper">
         <div id="container">
             <div id="main-content">
@@ -21,28 +17,42 @@
                     <div class="imagewrap">
                         <div class="image-container">
                             <?php
+                            function displayevent($text, $image)
+                            {
+                                echo $text;
+                                if ($image != "x")
+                                    echo "<img src=\"assets/img/$image\">";
+                            }
+
+
+                            $extra = array("1" => "Sandwich", "2" => "Pasta", "3" => "Pizza", "4" => "Burger", "5" => "Sushi");
+                            $selected = $extra[rand(1, 5)];
+
+                            echo "You have $selected.<br>";
+
                             $d1 = rand(0, 99);
                             for ($i = 0; $i < $d1 * 0.1; $i++) {
                                 echo "o";
                             }
                             echo "<br>";
+
+
+
+
                             if ($d1 >= 50) {
-                                echo "You found nothing.";
+                                displayevent("You found nothing", "x");
                             } else if ($d1 >= 40) {
-                                echo "Hush, Jam is sleeping.";
-                                echo "<img src=\"assets/img/sleeping.jpg\">";
+                                displayevent("Hush, Jam is sleeping.", "sleeping.jpg");
                             } else if ($d1 >= 30) {
-                                echo "You found the rizzler!";
-                                echo "<img src=\"assets/img/mika.jpg\">";
+                                displayevent("You found the rizzler!", "Mika.jpg");
                             } else if ($d1 >= 20) {
-                                echo "You found the Kawasaki!!!<br>Click it to go to the funny page.";
-                                echo "<a href=\"pages/winpage/index.php\"><img src=\"assets/img/kawasaki.jpg\"></a>";
+                                echo "<a href=\"pages/winpage/index.php\">";
+                                displayevent("You found the kawasaki!", "kawasaki.jpg");
+                                echo "</a>";
                             } else if ($d1 >= 10) {
-                                echo "JM is sleeping.!";
-                                echo "<img src=\"assets/img/jmsleep.jpg\">";
+                                displayevent("JM is sleeping.", "jmsleep.jpg");
                             } else {
-                                echo "This weird person invites you to a game! <br> He is a gamer.";
-                                echo "<img src=\"assets/img/emirusimp.jpg\">";
+                                displayevent("You found a weird person. He is a gamer.", "emirusimp.jpg");
                             }
                             ?>
                         </div>
